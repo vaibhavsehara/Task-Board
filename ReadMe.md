@@ -69,8 +69,6 @@ This project was built with the help of GitHub Copilot and AI chat assistants. S
 
 ## Live Link
 
-- [Add your deployed app link here]
+[Live Link](https://task-board-ivory.vercel.app/)
 
-## Contact
 
-For any queries, contact [sanchit@sakshm.com](mailto:sanchit@sakshm.com)
