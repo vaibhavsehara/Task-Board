@@ -52,7 +52,7 @@ function App() {
   const renameTitleRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/tasks')
+    fetch('https://task-board-tq5f.onrender.com/tasks')
       .then(res => res.json())
       .then(data => setTasks(data));
   }, []);
@@ -99,7 +99,7 @@ function App() {
   const handleAddTask = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTask.title.trim()) return;
-    const res = await fetch('http://localhost:8000/tasks', {
+    const res = await fetch('https://task-board-tq5f.onrender.com/tasks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newTask),
@@ -112,14 +112,14 @@ function App() {
 
   // Delete Task
   const handleDeleteTask = async (id: number) => {
-    await fetch(`http://localhost:8000/tasks/${id}`, { method: 'DELETE' });
+    await fetch(`https://task-board-tq5f.onrender.com/tasks/${id}`, { method: 'DELETE' });
     setTasks((prev) => prev.filter((t) => t.id !== id));
     setMenuTaskId(null);
   };
 
   // Rename/Move Task
   const handleUpdateTask = async (task: Task) => {
-    const res = await fetch(`http://localhost:8000/tasks/${task.id}`, {
+    const res = await fetch(`https://task-board-tq5f.onrender.com/tasks/${task.id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
