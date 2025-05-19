@@ -59,16 +59,6 @@ npm run dev
 - You can deploy the frontend to Vercel/Netlify and the backend to Render/Fly.io or similar.
 - Update API URLs in the frontend if deploying to production.
 
-## Files to Upload to GitHub
-
-Upload the entire `project` folder, including:
-
-- `project/backend/` (all backend code, especially `main.py`)
-- `project/frontend/` (all frontend code, including `src/`, `public/`, and config files)
-- `project/README.md` (this file)
-
-**Do NOT upload `__pycache__` or `node_modules` folders.**
-
 ## AI Usage
 
 This project was built with the help of GitHub Copilot and AI chat assistants. See the `chats` folder (if included) for conversation logs.
