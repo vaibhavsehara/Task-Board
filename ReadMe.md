@@ -59,13 +59,6 @@ npm run dev
 - You can deploy the frontend to Vercel/Netlify and the backend to Render/Fly.io or similar.
 - Update API URLs in the frontend if deploying to production.
 
-## AI Usage
-
-This project was built with the help of GitHub Copilot and AI chat assistants. See the `chats` folder (if included) for conversation logs.
-
-## Demo Video
-
-- [Add your demo video link here]
 
 ## Live Link
 
